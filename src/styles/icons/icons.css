@@ -287,7 +287,7 @@
 }
 
 .pin_icon {
-  background-image: url("../../../public/icons/icons1.png");
+  background-image: url('../../../public/icons/icons1.png');
   background-position: 0px -378px;
   background-size: auto;
   width: 20px;
@@ -296,7 +296,7 @@
   display: inline-block;
 }
 .save_icon {
-  background-image: url("../../../public/icons/icons1.png");
+  background-image: url('../../../public/icons/icons1.png');
   background-position: 0px -63px;
   background-size: auto;
   width: 20px;
@@ -305,7 +305,7 @@
   display: inline-block;
 }
 .embed_icon {
-  background-image: url("../../../public/icons/icons1.png");
+  background-image: url('../../../public/icons/icons1.png');
   background-position: 0px -126px;
   background-size: auto;
   width: 20px;
@@ -314,7 +314,7 @@
   display: inline-block;
 }
 .copy_icon {
-  background-image: url("../../../public/icons/icons2.png");
+  background-image: url('../../../public/icons/icons2.png');
   background-position: 0px -568px;
   background-size: auto;
   width: 20px;
@@ -323,7 +323,7 @@
   display: inline-block;
 }
 .edit_icon {
-  background-image: url("../../../public/icons/icons2.png");
+  background-image: url('../../../public/icons/icons2.png');
   background-position: 0px -610px;
   background-size: auto;
   width: 20px;
@@ -333,7 +333,7 @@
   -webkit-filter: invert(40%);
 }
 .turnOffNotifications_icon {
-  background-image: url("../../../public/icons/icons3.png");
+  background-image: url('../../../public/icons/icons3.png');
   background-position: 0px -138px;
   background-size: auto;
   width: 20px;
@@ -342,7 +342,7 @@
   display: inline-block;
 }
 .delete_icon {
-  background-image: url("../../../public/icons/icons1.png");
+  background-image: url('../../../public/icons/icons1.png');
   background-position: 0px -399px;
   background-size: auto;
   width: 20px;
@@ -352,7 +352,7 @@
 }
 
 .date_icon {
-  background-image: url("../../../public/icons/icons4.png");
+  background-image: url('../../../public/icons/icons4.png');
   background-position: 0px -67px;
   background-size: auto;
   width: 20px;
@@ -361,7 +361,7 @@
   display: inline-block;
 }
 .refresh_icon {
-  background-image: url("../../../public/icons/refresh.png");
+  background-image: url('../../../public/icons/refresh.png');
   background-position: 0px 0px;
   background-size: auto;
   width: 20px;
@@ -370,7 +370,7 @@
   display: inline-block;
 }
 .archive_icon {
-  background-image: url("../../../public/icons/icons1.png");
+  background-image: url('../../../public/icons/icons1.png');
   background-position: 0px -84px;
   background-size: auto;
   width: 20px;
@@ -379,7 +379,7 @@
   display: inline-block;
 }
 .trash_icon {
-  background-image: url("../../../public/icons/icons2.png");
+  background-image: url('../../../public/icons/icons2.png');
   background-position: 0px -799px;
   background-size: auto;
   width: 20px;
@@ -388,7 +388,7 @@
   display: inline-block;
 }
 .like_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0 -243px;
   background-size: auto;
   width: 18px;
@@ -398,7 +398,7 @@
   filter: invert(40%);
 }
 .comment_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0 -205px;
   background-size: auto;
   width: 18px;
@@ -408,7 +408,7 @@
   filter: invert(40%);
 }
 .share_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0 -262px;
   background-size: auto;
   width: 18px;
@@ -418,7 +418,7 @@
   filter: invert(40%);
 }
 .emoji_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0px -434px;
   background-size: auto;
   width: 16px;
@@ -428,7 +428,7 @@
   filter: invert(40%);
 }
 .camera_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0px -366px;
   background-size: auto;
   width: 16px;
@@ -438,7 +438,7 @@
   filter: invert(40%);
 }
 .gif_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0px -451px;
   background-size: auto;
   width: 16px;
@@ -448,7 +448,7 @@
   filter: invert(40%);
 }
 .sticker_icon {
-  background-image: url("../../../public/icons/icons5.png");
+  background-image: url('../../../public/icons/icons5.png');
   background-position: 0px -468px;
   background-size: auto;
   width: 16px;
@@ -458,7 +458,7 @@
   filter: invert(40%);
 }
 .exit_icon {
-  background-image: url("../../../public/icons/icons6.png");
+  background-image: url('../../../public/icons/icons6.png');
   background-position: -126px -71px;
   background-size: auto;
   width: 20px;
@@ -468,7 +468,7 @@
   filter: invert(40%);
 }
 .edit_icon {
-  background-image: url("../../../public/icons/icons18.png");
+  background-image: url('../../../public/icons/icons18.png');
   background-position: -34px -109px;
   background-size: auto;
   width: 16px;
@@ -477,7 +477,7 @@
   display: inline-block;
 }
 .arrowDown_icon {
-  background-image: url("../../../public/icons/icons6.png");
+  background-image: url('../../../public/icons/icons6.png');
   background-position: -117px -130px;
   background-size: auto;
   width: 12px;
@@ -488,7 +488,7 @@
 .emoji_icon_large {
   height: 24px;
   width: 24px;
-  background-image: url("../../../public/icons/icons7.png");
+  background-image: url('../../../public/icons/icons7.png');
   background-position: 0px -207px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -499,7 +499,7 @@
 .tag_icon {
   height: 24px;
   width: 24px;
-  background-image: url("../../../public/icons/icons7.png");
+  background-image: url('../../../public/icons/icons7.png');
   background-position: 0px -257px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -508,7 +508,7 @@
 .maps_icon {
   height: 24px;
   width: 24px;
-  background-image: url("../../../public/icons/icons8.png");
+  background-image: url('../../../public/icons/icons8.png');
   background-position: 0px -225px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -517,14 +517,14 @@
 .microphone_icon {
   height: 24px;
   width: 24px;
-  background-image: url("../../../public/icons/icons9.png");
+  background-image: url('../../../public/icons/icons9.png');
   background-position: 0px -100px;
   background-size: auto;
   background-repeat: no-repeat;
   display: inline-block;
 }
 .addPhoto_icon {
-  background-image: url("../../../public/icons/icons7.png");
+  background-image: url('../../../public/icons/icons7.png');
   background-position: -25px -292px;
   background-size: auto;
   width: 20px;
@@ -533,7 +533,7 @@
   display: inline-block;
 }
 .phone_icon {
-  background-image: url("../../../public/icons/icons7.png");
+  background-image: url('../../../public/icons/icons7.png');
   background-position: -25px -271px;
   background-size: auto;
   width: 20px;
@@ -543,7 +543,7 @@
   filter: invert(20%);
 }
 .camera_filled_icon {
-  background-image: url("../../../public/icons/icons25.png");
+  background-image: url('../../../public/icons/icons25.png');
   background-position: 0px -444px;
   background-size: auto;
   width: 20px;
@@ -737,4 +737,12 @@
   width: 16px;
   height: 16px;
   background-position: 0 -60px;
+}
+.error_icon {
+  background-image: url(../../../public/icons/icons10.png);
+  background-size: auto;
+  background-repeat: auto;
+  display: inline-block;
+  height: 21px;
+  width: 21px;
 }
