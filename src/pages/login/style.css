@@ -4,7 +4,7 @@
 }
 
 .login_wrap {
-  /* height: 78vh; */
+  min-height: 78vh;
   color: var(--color-primary);
 }
 
@@ -73,7 +73,7 @@
 
 /* footer */
 .login_footer {
-  /* height: 22vh; */
+  min-height: 22vh;
   background: var(--bg-primary);
   padding: 1.5rem;
 }
