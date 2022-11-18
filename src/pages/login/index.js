@@ -1,14 +1,14 @@
 import './style.css';
-import { Link } from 'react-router-dom';
 import LoginForm from '../../components/Login/LoginForm';
 import Footer from '../../components/Login/Footer';
+import RegisterForm from '../../components/Login/RegisterForm';
 
 const Login = () => {
   return (
     <div className="login">
       <div className="login_wrapper">
         <LoginForm />
-        <div className="register"></div>
+        <RegisterForm />
         <Footer />
       </div>
     </div>
