@@ -107,9 +107,10 @@
 }
 
 .register_header span:first-of-type {
-  font-weight: 700px;
+  font-weight: bold;
   font-size: 32px;
 }
+
 .register_header span:last-of-type {
   font-weight: 15px;
   color: var(--color-secondary);
@@ -250,6 +251,14 @@
   max-width: 900px;
 }
 
+/* DOB & GENDER */
+
+.reg_grid .input_error {
+  width: 300px;
+  position: absolute;
+  top: 70px;
+}
+
 /* media queries */
 
 @media (min-width: 539px) {
@@ -265,6 +274,9 @@
   .reg_grid select,
   .reg_grid label {
     width: 110px;
+  }
+  .reg_grid .input_error {
+    width: 350px;
   }
 }
 @media (min-width: 650px) {
