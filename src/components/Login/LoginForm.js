@@ -1,12 +1,21 @@
 import { Form, Formik } from 'formik';
+import Cookies from 'js-cookie';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import ClipLoader from 'react-spinners/ClipLoader';
 import * as Yup from 'yup';
+import api from '../../axios';
 import LoginInput from '../Inputs/LoginInput';
 
 const loginInfos = { email: '', password: '' };
 
-const LoginForm = () => {
+const LoginForm = ({ setVisible }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const [login, setLogin] = useState(loginInfos);
   const { email, password } = login;
 
@@ -21,6 +30,22 @@ const LoginForm = () => {
       .email('Invalid email address'),
     password: Yup.string().required('Password is required'),
   });
+
+  const loginSubmit = async () => {
+    try {
+      setLoading(true);
+      const { data } = await api.post(`/login`, {
+        email,
+        password,
+      });
+      dispatch({ type: 'LOGIN', payload: data });
+      Cookies.set('user', JSON.stringify(data));
+      navigate('/');
+    } catch (error) {
+      setLoading(false);
+      setError(error.response.data.message);
+    }
+  };
   return (
     <div className="login_wrap">
       <div className="login_1">
@@ -38,6 +63,7 @@ const LoginForm = () => {
               password,
             }}
             validationSchema={loginValidation}
+            onSubmit={() => loginSubmit()}
           >
             {(formik) => (
               <Form>
@@ -63,8 +89,16 @@ const LoginForm = () => {
           <Link to="/forgot" className="forgot_password">
             Forgot password?
           </Link>
+          <ClipLoader color="#1876f2" loading={loading} size={14} />
+
+          {error && <div className="error_text">{error}</div>}
           <div className="sign_splitter"></div>
-          <button className="blue_btn open_signup">Create Account</button>
+          <button
+            className="blue_btn open_signup"
+            onClick={() => setVisible(true)}
+          >
+            Create Account
+          </button>
         </div>
         <Link to="/" className="sign_extra">
           <b>Create a Page</b> for a celebrity, brand or business.
