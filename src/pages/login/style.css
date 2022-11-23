@@ -259,6 +259,13 @@
   top: 70px;
 }
 
+.error_text {
+  color: #b94a48;
+}
+.success_text {
+  color: var(--green-color);
+}
+
 /* media queries */
 
 @media (min-width: 539px) {

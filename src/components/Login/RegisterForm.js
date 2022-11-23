@@ -4,8 +4,16 @@ import RegisterInput from '../Inputs/RegisterInput';
 import * as Yup from 'yup';
 import DateOfBirthSelect from './DateOfBirthSelect';
 import GenderSelect from './GenderSelect';
+import ClipLoader from 'react-spinners/ClipLoader';
+import api from '../../axios';
+import { useDispatch } from 'react-redux';
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterForm = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const userInfos = {
     firstName: '',
     lastName: '',
@@ -62,6 +70,37 @@ const RegisterForm = () => {
   const [dateError, setDateError] = useState('');
   const [genderError, setGenderError] = useState('');
 
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const registerSubmit = async () => {
+    try {
+      const { data } = await api.post(`/register`, {
+        firstName,
+        lastName,
+        email,
+        password,
+        bYear,
+        bMonth,
+        bDay,
+        gender,
+      });
+      setError('');
+      setSuccess(data.message);
+      const { message, ...rest } = data;
+      setTimeout(() => {
+        dispatch({ type: 'LOGIN', payload: rest });
+        Cookies.set('user', JSON.stringify(rest));
+        navigate('/');
+      }, 2000);
+    } catch (error) {
+      setLoading(false);
+      setSuccess('');
+      setError(error.response.data.message);
+    }
+  };
+
   return (
     <div className="blur">
       <div className="register">
@@ -104,6 +143,7 @@ const RegisterForm = () => {
             } else {
               setDateError('');
               setGenderError('');
+              registerSubmit();
             }
           }}
         >
@@ -154,7 +194,6 @@ const RegisterForm = () => {
                   dateError={dateError}
                 />
               </div>
-
               <div className="reg_col">
                 <div className="reg_line_header">
                   Gender <i className="info_icon"></i>
@@ -173,6 +212,9 @@ const RegisterForm = () => {
               <div className="reg_btn_wrapper">
                 <button className=" open_signup blue_btn ">Sign Up</button>
               </div>
+              <ClipLoader color="#1876f2" loading={loading} size={14} />
+              {error && <div className="error_text">{error}</div>}{' '}
+              {success && <div className="success_text">{success}</div>}{' '}
             </Form>
           )}
         </Formik>
