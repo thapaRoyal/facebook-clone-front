@@ -1,8 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
+import { useRef } from 'react';
 import Header from '../../components/Header';
+import useClickOutside from '../../helpers/clickOutside';
 
 const Home = () => {
-  return <Header />;
+  const [visible, setVisible] = useState(true);
+  const el = useRef(null);
+
+  useClickOutside(el, () => {
+    setVisible(false);
+  });
+
+  return (
+    <div>
+      <Header />
+      {visible && <div className="card" ref={el}></div>}
+    </div>
+  );
 };
 
 export default Home;
