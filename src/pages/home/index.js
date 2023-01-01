@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 import useClickOutside from '../../helpers/clickOutside';
 
 const Home = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const el = useRef(null);
 
   useClickOutside(el, () => {
