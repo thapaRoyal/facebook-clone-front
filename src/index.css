@@ -74,9 +74,12 @@ a {
   background: var(--bg-third);
 }
 
-/* card */
-.card {
-  height: 500px;
-  width: 500px;
-  background-color: red;
+/* scrollbar */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #aeaeafa1;
+  border-radius: 5px;
 }
